@@ -9,22 +9,22 @@ deploy:
 - provider: lambda
   function_name: <update>
   region: us-east-1
-  role: <update>
+  role: arn:aws:iam::694910018021:role/lambda_basic_execution
   runtime: python3.6
   module_name: alexa_py
   handler_name: lambda_handler
   zip: "./src"
-  access_key_id: <update>
+  access_key_id: AKIAIMTIZDXJPJSEWUOQ
   on:
     branch: master
   secret_access_key:
-    secure: <update>
+    secure: b2cHmHD2ZOWaxS6bVTp65M3eM/EsjbHOyo3akykpBROCtTrUm9BDwt4oca6sNf0S9DjHKu6Bdqlf6cs4pEsvGvJO1vlDbTfBg/K2plYtgOXJi8S2zkL63AyYsmKZEvvsinn4Holft0YP+npZ/jFeS47Iz9bGppP9AoboYSKmUtmuMik4V1H8kXq+/1GJR+7G8cbGsQKAnJeDQZUB6ZT7RTfK9M/0geGfvA2yYg/NXEYuj2IMDMkwumI6Yussitv5xh/F6Z+iFfPVIz0iLwlys4iDqd0b2hLRG+lPhN0W9+GOfKVf1R+X+kbf8QdGnyCxtmKYJ3Fh5wjc5zGrMzO+Ad/n91PtxrgM7UkX/0vrER36dM1g6QcCk70Chpuclssa2ZBZ7C6OfLRcY4hOxtudPuD32ASmVYGelYF2WEzSOJT5yBiDdQiHJ6AV7RUoJNmCQiJIAsw36PoFe7lmnhYDoHpdzQOemhJi+Rrz4+xYlg34jKTwSIlh0ayWZHa584AecCHp/V909qrP0SU9lFiTKZAYh8bIenL7EKGGs245MBobBrpvP+lqSCwWMLAbgk3K9zCdcjp5gsWyB+Xo4f3lZhPXj6VPO485s/zDUYgz+43hV/PGHHufGuGu9D+t3Q0Vk0BIYSn9Urfjw6ipGchMUv3BR22TWJIAo4j482he7Xs=
 - provider: s3
   bucket: alexa-responses
   local-dir: responses
   skip_cleanup: true
   on:
     branch: master
-  access_key_id: <update - same as above>
+  access_key_id: AKIAIMTIZDXJPJSEWUOQ
   secret_access_key:
-    secure: <update - same as above>
+    secure: b2cHmHD2ZOWaxS6bVTp65M3eM/EsjbHOyo3akykpBROCtTrUm9BDwt4oca6sNf0S9DjHKu6Bdqlf6cs4pEsvGvJO1vlDbTfBg/K2plYtgOXJi8S2zkL63AyYsmKZEvvsinn4Holft0YP+npZ/jFeS47Iz9bGppP9AoboYSKmUtmuMik4V1H8kXq+/1GJR+7G8cbGsQKAnJeDQZUB6ZT7RTfK9M/0geGfvA2yYg/NXEYuj2IMDMkwumI6Yussitv5xh/F6Z+iFfPVIz0iLwlys4iDqd0b2hLRG+lPhN0W9+GOfKVf1R+X+kbf8QdGnyCxtmKYJ3Fh5wjc5zGrMzO+Ad/n91PtxrgM7UkX/0vrER36dM1g6QcCk70Chpuclssa2ZBZ7C6OfLRcY4hOxtudPuD32ASmVYGelYF2WEzSOJT5yBiDdQiHJ6AV7RUoJNmCQiJIAsw36PoFe7lmnhYDoHpdzQOemhJi+Rrz4+xYlg34jKTwSIlh0ayWZHa584AecCHp/V909qrP0SU9lFiTKZAYh8bIenL7EKGGs245MBobBrpvP+lqSCwWMLAbgk3K9zCdcjp5gsWyB+Xo4f3lZhPXj6VPO485s/zDUYgz+43hV/PGHHufGuGu9D+t3Q0Vk0BIYSn9Urfjw6ipGchMUv3BR22TWJIAo4j482he7Xs=
