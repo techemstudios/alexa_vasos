@@ -1,6 +1,8 @@
 language: python
 python:
 - '3.6'
+notifications:
+    slack: techem:6IDhGDDieaZuUGr38CVpSZcn
 install:
 env:
   secure: <update>
