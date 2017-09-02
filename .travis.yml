@@ -7,7 +7,7 @@ env:
 script: "./build"
 deploy:
 - provider: lambda
-  function_name: <update>
+  function_name: alexaVasos
   region: us-east-1
   role: arn:aws:iam::694910018021:role/lambda_basic_execution
   runtime: python3.6
