@@ -9,7 +9,7 @@
 	},
 
 	{
-	    "intent": "yourfirstintent"
+	    "intent": "YourFirstIntent"
 	},
 
 	{
@@ -19,7 +19,7 @@
 		    "type" : "LIST_OF_THINGS"
 		}
 	    ],
-	    "intent":"yoursecondintent"
+	    "intent":"YourSecondIntent"
 	}
 
     ]
